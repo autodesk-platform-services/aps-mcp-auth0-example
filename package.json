@@ -1,0 +1,23 @@
+{
+  "name": "aps-mcp-auth0-example",
+  "version": "0.0.1",
+  "type": "module",
+  "description": "Example MCP server for Autodesk Platform Services.",
+  "author": "Petr Broz <petr.broz@autodesk.com>",
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "scripts": {
+    "start": "node --env-file-if-exists=.env app.js"
+  },
+  "dependencies": {
+    "@aps_sdk/authentication": "^1.0.1",
+    "@aps_sdk/construction-issues": "^1.1.0",
+    "@aps_sdk/data-management": "^1.1.3",
+    "@modelcontextprotocol/express": "2.0.0-beta.3",
+    "@modelcontextprotocol/node": "2.0.0-beta.3",
+    "@modelcontextprotocol/server": "2.0.0-beta.3",
+    "express": "^5.2.1",
+    "jose": "^6.2.3"
+  }
+}
