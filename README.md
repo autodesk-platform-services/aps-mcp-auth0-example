@@ -2,6 +2,8 @@
 
 Example MCP server for Autodesk Platform Services demonstrating proper auth implementation.
 
+https://github.com/user-attachments/assets/496794cb-7e3d-496f-8b5e-8604ae866e7a
+
 > **Auth0 is just one option here.** This example uses [Auth0](https://auth0.com/) as the Layer 1 authorization server, but nothing about the MCP server is tied to it — the server only *verifies* bearer tokens against a standard OAuth/JWKS endpoint. You can swap in any OAuth 2.0 authorization server that fits your needs, such as [WorkOS](https://workos.com/), [Okta](https://www.okta.com/), [Microsoft Entra ID](https://www.microsoft.com/security/business/identity-access/microsoft-entra-id), [Keycloak](https://www.keycloak.org/), or your own. If you do, adapt `auth/auth0.js` (token verification and metadata discovery) and the corresponding config accordingly; the Layer 2 APS flow stays the same.
 
 ## Features
